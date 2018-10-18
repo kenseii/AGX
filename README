@@ -1,14 +1,16 @@
-This repo holds the code for my small cryptocurrency the AGX.
+#AGX
+This repo holds the code for my small decentralized cryptocurrency the AGX.
 
 It is built using python 3 and flask.
 
 The libraries that need to be installed are :
 
 1.Flask  
-2.Requests
+2.Requests  
 3.Json  
-4.Hashlib
+4.Hashlib  
+5.Others are built-in python modules
 
-feel free to fork, PR...
+Feel free to fork, PR...
 
 Happy coding :-)

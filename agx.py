@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 
-My cryptocurrency
+My AGX crypto
 
 """
 
@@ -21,17 +21,21 @@ from urllib.parse import urlparse
 class Blockchain:
     """
     Initiate the object
+    create a chain list to hold mined transactions
+    create transactions list to hold unmined transactions
     create a genesis block
 
     """
 
     def __init__(self):
         self.chain = []
+        self.transactions = []
         self.create_block(proof=1, previous_hash='0')
 
     """
 
     This method creates a block using the given information and add it to the chain
+    after adding the transactions to the chain it truncates the transactions list
 
     """
 
@@ -39,8 +43,9 @@ class Blockchain:
         block = {'index': len(self.chain) + 1,
                  'timestamp': str(datetime.datetime.now()),
                  'proof': proof,
-                 'previous_hash': previous_hash}
-
+                 'previous_hash': previous_hash,
+                 'transactions': self.transactions}
+        self.transactions = []
         self.chain.append(block)
         return block
 
@@ -112,6 +117,22 @@ class Blockchain:
 
         return True
 
+    """
+    
+    This method creates transactions in the transaction[],
+    in the needed format via a dict,
+    then return the index of the block supposed to hold this transaction in the future(just the last_block+1).
+    
+    """
+    def add_transaction(self, sender, receiver, amount):
+        self.transactions.append({
+            'sender':sender,
+            'receiver':receiver,
+            'amount':amount
+        })
+
+        previous_block = self.get_previous_block()
+        return previous_block['index']+1
 
 # Mining a blockchain
 
