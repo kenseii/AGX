@@ -23,6 +23,7 @@ class Blockchain:
     Initiate the object
     create a chain list to hold mined transactions
     create transactions list to hold unmined transactions
+    create a nodes set to hold the nodes on my network
     create a genesis block
 
     """
@@ -31,6 +32,7 @@ class Blockchain:
         self.chain = []
         self.transactions = []
         self.create_block(proof=1, previous_hash='0')
+        self.nodes = set()
 
     """
 
@@ -133,6 +135,16 @@ class Blockchain:
 
         previous_block = self.get_previous_block()
         return previous_block['index']+1
+
+    """
+    
+    This method adds a new node to the network using the urlparse function
+    
+    """
+
+    def add_node(self,address):
+        parsed_url = urlparse(address)
+        self.nodes.add(parsed_url.netloc)
 
 # Mining a blockchain
 
