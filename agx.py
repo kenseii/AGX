@@ -138,7 +138,7 @@ class Blockchain:
 
     """
     
-    This method adds a new node to the network using the urlparse function
+    This method adds a new node to the network (ip mostly) using the urlparse function
     
     """
 
@@ -146,9 +146,41 @@ class Blockchain:
         parsed_url = urlparse(address)
         self.nodes.add(parsed_url.netloc)
 
+    """
+    
+    This method replaces the chain on the nodes with the longest chain on the network,
+    it checks the current chain on that current node then tries to find a node with a longer chain, 
+    if found it checks the validity and replaces the local one(Consensus) else it keeps that local one.
+    
+    """
+
+    def replace_chain(self):
+        network = self.nodes
+        longest_chain = None
+        max_length = len(self.chain)
+        for node in network:
+            # gets the node's ip and build a route using it
+            response = requests.get(f"http://{node}/get_chain")
+            if response.status_code == 200:
+                length = response.json()['length']
+                chain = response.json()['chain']
+                # check length and validity of node's chain
+                if length > max_length and self.is_chain_valid(chain):
+                    max_length = length
+                    longest_chain = chain
+
+        if longest_chain:
+            # Update the global chain with the longest
+            self.chain = longest_chain
+            return True
+        # Basically return false in case its not the longest chain
+        return False
+
+
+
 # Mining a blockchain
 
-# Flask Web app
+# ------------------------------------------------- Flask Web app --------------------------------------------------
 
 app = Flask(__name__)
 
