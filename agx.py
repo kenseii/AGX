@@ -184,6 +184,13 @@ class Blockchain:
 
 app = Flask(__name__)
 
+
+"""
+
+Creating uuid addresses of the nodes, actually this creates a uuid str of the node on port 5000 of flask
+
+"""
+node_address = str(uuid4()).replace('-','')
 # instance of the blockchain class
 
 blockchain = Blockchain()
@@ -205,6 +212,7 @@ def mine_block():
     previous_proof = previous_block['proof']
     proof = blockchain.proof_of_work(previous_proof)
     previous_hash = blockchain.hash(previous_block)
+    blockchain.add_transaction(sender=node_address,receiver='Hamada',amount=1)
 
     # because it returns the content of that block after creating it
     block = blockchain.create_block(proof, previous_hash)
@@ -213,7 +221,8 @@ def mine_block():
                 'index': block['index'],
                 'timestamp': block['timestamp'],
                 'proof': block['proof'],
-                'previous_hash': block['previous_hash']
+                'previous_hash': block['previous_hash'],
+                'transactions':block['transactions']
                 }
     return jsonify(response), 200
 
