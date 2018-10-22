@@ -258,6 +258,25 @@ def is_valid():
 
     return jsonify(response), 200
 
+
+"""
+
+Create transactions given via a post request after validation
+
+"""
+@app.route('/add_transaction', methods=['POST'])
+def add_transaction():
+    json = request.get_json()
+    transaction_keys = ['sender','receiver','amount']
+    # validate if the needed keys from the list above are all given
+    if not all(key in json for key in transaction_keys):
+        return 'Abunai the transaction is incomplete', 400
+    # in case all is well insert our transaction
+    index = blockchain.add_transaction(json['sender'],json['receiver'],json['amount'])
+    response = {'message': f'The transaction has been recorded successfully, it will be added in block no. {index}'}
+
+
+
 # Decentralizing the blockchain
 
 

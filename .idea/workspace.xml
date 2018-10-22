@@ -22,14 +22,14 @@
         <counts>
           <entry key="README" value="388" />
           <entry key="gitignore" value="6" />
-          <entry key="py" value="2300" />
+          <entry key="py" value="2920" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="388" />
           <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Python" value="2300" />
+          <entry key="Python" value="2920" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -51,10 +51,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/agx.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="214" column="75" selection-start-line="214" selection-start-column="75" selection-end-line="214" selection-end-column="75" />
+            <state relative-caret-position="-1922">
+              <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
               <folding>
                 <element signature="e#73#88#0" expanded="true" />
+                <marker date="1540181469707" expanded="true" signature="7181:7706" ph="..." />
               </folding>
             </state>
           </provider>
@@ -88,7 +89,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="34" />
+    <option name="x" value="33" />
     <option name="y" value="58" />
     <option name="width" value="1620" />
     <option name="height" value="950" />
@@ -144,7 +145,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="34" y="58" width="1620" height="950" extended-state="0" />
+    <frame x="33" y="58" width="1620" height="950" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
@@ -219,10 +220,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/agx.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="214" column="75" selection-start-line="214" selection-start-column="75" selection-end-line="214" selection-end-column="75" />
+        <state relative-caret-position="-1922">
+          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
           <folding>
             <element signature="e#73#88#0" expanded="true" />
+            <marker date="1540181469707" expanded="true" signature="7181:7706" ph="..." />
           </folding>
         </state>
       </provider>
