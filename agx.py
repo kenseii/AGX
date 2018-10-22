@@ -274,6 +274,7 @@ def add_transaction():
     # in case all is well insert our transaction
     index = blockchain.add_transaction(json['sender'],json['receiver'],json['amount'])
     response = {'message': f'The transaction has been recorded successfully, it will be added in block no. {index}'}
+    return jsonify(response), 201
 
 
 
