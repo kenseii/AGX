@@ -277,8 +277,25 @@ def add_transaction():
     return jsonify(response), 201
 
 
-
 # Decentralizing the blockchain
+
+"""
+
+REST POST request to create new nodes connected on the network, basically they are submitted as json
+
+"""
+
+@app.route('/connect_node', methods=['POST'])
+def connect_node():
+    json = request.get_json()
+    nodes = json.get('nodes')
+    if nodes is None:
+        return 'The nodes list is empty', 400
+
+    for node in nodes:
+            blockchain.add_node(node)
+    response = {'message': 'The nodes have been added on the network', 'total nodes:': len(nodes)}
+    return jsonify(response), 201
 
 
 """
