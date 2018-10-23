@@ -302,6 +302,26 @@ def connect_node():
 
 """
 
+This function checks and replaces the current chain in case it is not the longest in the network 
+via the API(there is already a method doing this in the class)
+
+"""
+
+
+@app.route('/replace_chain', methods=['GET'])
+def replace_chain():
+    is_the_chain_to_be_replaced = blockchain.replace_chain()
+
+    if is_the_chain_to_be_replaced:
+        response = {'message': 'The chain has been replaced by the longest one', 'current_chain': blockchain.chain}
+    else:
+        response = {'message':'Nope the chain is the longest so not replaced', 'current_chain': blockchain.chain}
+
+    return jsonify(response), 200
+
+
+"""
+
 Run the flask app
 
 """
