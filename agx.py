@@ -294,7 +294,9 @@ def connect_node():
 
     for node in nodes:
             blockchain.add_node(node)
-    response = {'message': 'The nodes have been added on the network', 'total nodes:': len(nodes)}
+    response = {'message': 'Added to the blockchain network.',
+                'total_nodes': list(blockchain.nodes),
+                'count': len(nodes)}
     return jsonify(response), 201
 
 
