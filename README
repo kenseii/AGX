@@ -13,4 +13,14 @@ The libraries that need to be installed are :
 
 Feel free to fork, PR...
 
+#JSON data files
+
+*  #####nodes.json
+This file contains the nodes on my blockchain network,
+ in production it can be replaced by getting data from request urlparse and keeping them.
+ 
+* #####transactions.json
+This file contains the data format of the transactions,
+in production it can be replaced by getting data from a form...
+
 Happy coding :-)

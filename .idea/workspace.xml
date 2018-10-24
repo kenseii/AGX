@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc54ffab-ac9e-49e1-8ae8-7ebddd7f566b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/nodes.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agx.py" beforeDir="false" afterPath="$PROJECT_DIR$/agx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README" beforeDir="false" afterPath="$PROJECT_DIR$/README" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,27 +24,31 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="README" value="388" />
+          <entry key="README" value="725" />
           <entry key="gitignore" value="6" />
-          <entry key="py" value="3934" />
+          <entry key="json" value="137" />
+          <entry key="py" value="3991" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="388" />
+          <entry key="JSON" value="137" />
+          <entry key="Markdown" value="725" />
           <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Python" value="3934" />
+          <entry key="Python" value="3991" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="README" value="1" />
+          <entry key="README" value="2" />
           <entry key="gitignore" value="1" />
+          <entry key="json" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Markdown" value="1" />
+          <entry key="JSON" value="1" />
+          <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -51,15 +56,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/agx.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="643">
-              <caret line="315" column="76" selection-start-line="315" selection-start-column="76" selection-end-line="315" selection-end-column="76" />
+            <state relative-caret-position="58">
+              <caret line="285" column="3" lean-forward="true" selection-start-line="285" selection-start-column="3" selection-end-line="285" selection-end-column="3" />
               <folding>
-                <marker date="1540338013066" expanded="true" signature="7181:7739" ph="..." />
-                <marker date="1540338013066" expanded="true" signature="8557:8828" ph="..." />
+                <marker date="1540338155769" expanded="true" signature="7181:7739" ph="..." />
+                <marker date="1540338155769" expanded="true" signature="8570:8946" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nodes.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="285">
+                <caret line="19" column="89" selection-start-line="19" selection-start-column="89" selection-end-line="19" selection-end-column="89" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -80,8 +106,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/README" />
         <option value="$PROJECT_DIR$/agx.py" />
+        <option value="$PROJECT_DIR$/README" />
+        <option value="$PROJECT_DIR$/nodes.json" />
       </list>
     </option>
   </component>
@@ -151,7 +178,7 @@
     <frame x="33" y="58" width="1620" height="950" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24968314" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18060836" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -211,24 +238,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/agx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="285" column="3" lean-forward="true" selection-start-line="285" selection-start-column="3" selection-end-line="285" selection-end-column="3" />
+          <folding>
+            <marker date="1540338155769" expanded="true" signature="7181:7739" ph="..." />
+            <marker date="1540338155769" expanded="true" signature="8570:8946" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="225">
-            <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <first_editor relative-caret-position="285">
+            <caret line="19" column="89" selection-start-line="19" selection-start-column="89" selection-end-line="19" selection-end-column="89" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/agx.py">
+    <entry file="file://$PROJECT_DIR$/nodes.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="643">
-          <caret line="315" column="76" selection-start-line="315" selection-start-column="76" selection-end-line="315" selection-end-column="76" />
-          <folding>
-            <marker date="1540338013066" expanded="true" signature="7181:7739" ph="..." />
-            <marker date="1540338013066" expanded="true" signature="8557:8828" ph="..." />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
         </state>
       </provider>
     </entry>
