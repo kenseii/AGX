@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc54ffab-ac9e-49e1-8ae8-7ebddd7f566b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/agx1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agx2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agx3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README" beforeDir="false" afterPath="$PROJECT_DIR$/README" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodes.json" beforeDir="false" afterPath="$PROJECT_DIR$/nodes.json" afterDir="false" />
-    </list>
+    <list default="true" id="fc54ffab-ac9e-49e1-8ae8-7ebddd7f566b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +12,7 @@
     <session id="1618848445">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.opened" value="2" />
@@ -165,7 +157,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="33" />
     <option name="y" value="58" />
     <option name="width" value="1620" />
@@ -222,7 +214,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="33" y="58" width="1620" height="950" extended-state="1" />
+    <frame x="33" y="58" width="1620" height="950" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18060836" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
