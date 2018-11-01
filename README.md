@@ -11,6 +11,7 @@ The libraries that need to be installed are :
 4.Hashlib  
 5.Others are built-in python modules
 
+For the testing i used MyEtherWallet and Ganache
 Feel free to fork, PR...
 
 ##Extra files
