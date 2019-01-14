@@ -1,4 +1,4 @@
-#AGX
+# AGX
 This repo holds the code for my small decentralized cryptocurrency the AGX.
 
 It is built using python 3 and flask.
@@ -14,18 +14,18 @@ The libraries that need to be installed are :
 For the testing i used MyEtherWallet and Ganache
 Feel free to fork, PR...
 
-##Extra files
+## Extra files
 
 The files named agxnumber are for simulating multiple nodes that are running the blockchain,
 their content is the same as the one of agx.py except the receiver and the flask port
 
 #JSON data files
 
-*  #####nodes.json
+*  ##### nodes.json
 This file contains the nodes on my blockchain network,
  in production it can be replaced by getting data from request urlparse and keeping them.
  
-* #####transaction.json
+* ##### transaction.json
 This file contains the data format of a transaction,
 in production it can be replaced by getting data from a form...
 
